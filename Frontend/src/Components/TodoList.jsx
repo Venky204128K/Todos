@@ -14,7 +14,6 @@ function TodoList() {
         })
     },[localtodo]);
 
-    // this is sub branch 
 
     const HandleDelete = (id) =>{
         axios.delete('http://localhost:3001/delete/'+id).then((res)=>{
