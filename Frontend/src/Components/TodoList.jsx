@@ -10,7 +10,7 @@ function TodoList() {
         axios.get('http://localhost:3001/get').then((res)=>{
             setlocaltodo(res.data);
         }).catch((err)=>{
-            console.log("Error in Todolist"+err);
+            console.log("Error in "+err);
         })
     },[localtodo]);
 
